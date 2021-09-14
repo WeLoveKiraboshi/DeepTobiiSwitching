@@ -5,7 +5,7 @@
 This is a repository of our paper: "Camera Selection for Occlusion-less Surgery Recording via Training with an Egocentric Camera".
 
 <a href="http://hvrl.ics.keio.ac.jp/saito_y/images/IEEEAccess/overview.png" target="_blank"><img src="http://hvrl.ics.keio.ac.jp/saito_y/images/IEEEAccess/overview.png" 
-alt="ORB-SLAM2" width="584" height="413" border="50" /></a>
+alt="ORB-SLAM2" width="584" height="413" border="300" /></a>
 
 
 
