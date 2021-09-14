@@ -1,0 +1,33 @@
+seed: 1
+network: 'PIRL_v1_resnet18'
+pre_train: True # only for online network
+#projection dims of BYOL
+v_hdim: 512
+z_dim: 64
+
+#PIRL settings
+non_linear_head: False
+count_negatives: 6400
+temp-parameter: 0.07
+beta: 0.5
+tmax_for_cos_decay: 70
+
+bs: 64
+optimizer: 'SGD'
+lr: 1.e-4
+momentum: 0.9
+weight_decay: 0.0004
+
+epochs: 80
+shuffle: True
+augment: True
+
+save_model_interval: 2
+imsize: 224
+loss: 'RegressionLoss'
+
+
+# if you wanna train from scratch, please set off this key: init_train
+checkpoint: 'results/PIRL_v1/sequence/models/ckpt_train_33.pkl'
+init_train: True
+eval_metrics: 'mse' #'cos'

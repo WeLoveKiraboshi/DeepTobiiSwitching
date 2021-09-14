@@ -1,0 +1,37 @@
+seed: 1
+network: 'PCL_v1_resnet18'
+pre_train: True # only for online network
+#projection dims of PCL
+
+#PCL settings
+moco_m: 0.999 # 'moco momentum of updating key encoder (default: 0.999)'
+temperature: 0.07 #0.2
+low_dim: 64
+pcl_r: 4096 #65536 #16384
+mlp: True
+num_cluster: [5000, 10000, 20000] #[25000,50000,100000]
+warmup_epoch: 0
+schedule: [120, 160]
+
+
+bs: 64
+optimizer: 'SGD'
+lr: 1.e-4
+momentum: 0.9
+weight_decay: 0.0004 #1e-4
+
+epochs: 100
+shuffle: True
+augment: True
+separate_augment: True
+
+
+save_model_interval: 3
+imsize: 224
+loss: 'BinaryCrossEntropy'
+
+
+# if you wanna train from scratch, please set off this key: init_train
+checkpoint: 'results/PCL_v1/sequence/models/ckpt_train_97.pkl'
+init_train: True
+eval_metrics: 'mse' #'cos'

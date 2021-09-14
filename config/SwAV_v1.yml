@@ -1,0 +1,40 @@
+seed: 1
+network: 'SwAV_v1_resnet18'
+pre_train: True # only for online network
+#projection dims of CPC
+v_hdim: 2048
+z_dim: 64
+
+#SwAV settings
+nmb_prototypes: 3000
+queue_length: 3840
+epoch_queue_starts: 1000
+use_the_queue: False
+temperature: 0.1
+crops_for_assign: [1,0]
+nmb_crops: [2, 6]
+sinkhorn_iterations: 3
+epsilon: 0.05
+size_crops: [224, 96]
+min_scale_crops: [0.14, 0.05]
+max_scale_crops: [1, 0.14]
+
+bs: 64
+optimizer: 'Adam'
+lr: 1.e-4
+momentum: 0.9
+weight_decay: 0.0004
+
+epochs: 100
+shuffle: True
+augment: True
+
+save_model_interval: 3
+imsize: 224
+loss: 'SwAVContrastiveLoss'
+
+
+# if you wanna train from scratch, please set off this key: init_train
+checkpoint: 'results/SwAV_v1/sequence/models/ckpt_train_79.pkl'
+init_train: False
+eval_metrics: 'mse' #'cos'

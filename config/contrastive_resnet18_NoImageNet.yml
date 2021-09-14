@@ -1,0 +1,25 @@
+seed: 1
+network: 'resnet18'
+pre_train: False
+v_hdim: 1024
+z_dim: 64
+bs: 64
+lr: 1.e-4
+epochs: 80
+shuffle: True
+augment: True
+
+save_model_interval: 10
+imsize: 224
+loss: 'VAELossWithNormalContrasive'
+contrastive:
+  alpha: 1
+  beta : 1
+  gamma: 10
+
+
+#please nite that: ckpt file will be loaded even in training phase if exist.
+# if you wanna train from scratch, please set off this key: init_train
+# if you wanna train from scratch, please set off this key: init_train
+checkpoint: 'results/contrastive_resnet18_NoImageNet/sequence/models/ckpt_train_41.pkl'
+init_train: True

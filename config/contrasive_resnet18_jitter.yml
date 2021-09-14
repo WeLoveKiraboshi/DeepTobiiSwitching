@@ -1,0 +1,15 @@
+seed: 1
+network: 'resnet18'
+pre_train: True
+v_hdim: 1024
+z_dim: 64
+bs: 64
+lr: 1.e-4
+epochs: 80
+shuffle: True
+augment: True
+augment_type: ['jitter']
+
+save_model_interval: 10
+imsize: 224
+loss: 'VAELossWithNormalContrasive'

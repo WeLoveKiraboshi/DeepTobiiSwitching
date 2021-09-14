@@ -1,0 +1,29 @@
+seed: 1
+network: 'BYOL_v1_resnet18'
+pre_train: True # only for online network
+#projection dims of BYOL
+v_hdim: 512
+z_dim: 64
+
+#momentum value for target network update
+BYOL_m: 0.999 #0.996
+
+bs: 64
+optimizer: 'SGD'
+lr: 1.e-4
+momentum: 0.9
+weight_decay: 0.0004
+
+epochs: 80
+shuffle: True
+augment: True
+
+save_model_interval: 2
+imsize: 224
+loss: 'RegressionLoss'
+
+
+# if you wanna train from scratch, please set off this key: init_train
+checkpoint: 'results/BYOL_v1/sequence/models/ckpt_train_31.pkl'
+init_train: True
+eval_metrics: 'mse' #'cos'

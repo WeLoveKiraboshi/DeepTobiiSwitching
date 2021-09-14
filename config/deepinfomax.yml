@@ -1,0 +1,23 @@
+seed: 1
+network: 'deep_infomax'
+pre_train: True
+#projection dims of SimCLR
+z_dim: 64
+bs: 1
+lr: 1.e-4
+epochs: 80
+shuffle: True
+augment: False
+
+save_model_interval: 1
+imsize: 224
+loss: 'DeepInfoMaxLoss'
+DeepInfoMaxLoss:
+  alpha: 0.5
+  beta: 1.0
+  gamma: 0.1
+
+# if you wanna train from scratch, please set off this key: init_train
+#checkpoint: 'results/simCLR_resnet18/sequence/models/ckpt_train_30.pkl'
+init_train: True
+eval_metrics: 'mse' #'cos'

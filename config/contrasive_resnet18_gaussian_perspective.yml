@@ -1,0 +1,20 @@
+seed: 1
+network: 'resnet18'
+pre_train: True
+v_hdim: 1024
+z_dim: 64
+bs: 64
+lr: 1.e-4
+epochs: 80
+shuffle: True
+augment: True
+augment_type: ['perspective', 'gaussian_blur']
+
+save_model_interval: 3
+imsize: 224
+loss: 'VAELossWithNormalContrasive'
+
+#please nite that: ckpt file will be loaded even in training phase if exist.
+# if you wanna train from scratch, please set off this key: init_train
+checkpoint: 'results/contrasive_resnet18_gaussian_perspective/sequence/models/ckpt_train_52.pkl'
+init_train: True

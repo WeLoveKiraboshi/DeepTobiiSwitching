@@ -1,0 +1,25 @@
+seed: 1
+network: 'MoCo_v1_resnet18'
+pre_train: True
+#projection dims of MoCo v1
+moco_dim: 64 # output feature dimension
+moco_k: 65536 # 'queue size; number of negative keys (default: 65536)'
+moco_m: 0.999 # 'moco momentum of updating key encoder (default: 0.999)'
+moco_t: 0.07 # softmax temperature (default: 0.07)'
+moco_mlp: True # if use mlp header in MoCo network
+
+bs: 512
+lr: 1.e-4
+epochs: 80
+shuffle: True
+augment: True
+
+save_model_interval: 2
+imsize: 224
+loss: 'BinaryCrossEntropy'
+
+
+# if you wanna train from scratch, please set off this key: init_train
+checkpoint: 'results/MoCo_v1_bs512/sequence/models/ckpt_train_76.pkl'
+init_train: True
+eval_metrics: 'mse' #'cos'

@@ -1,0 +1,14 @@
+seed: 1
+network: 'resnet50'
+pre_train: True
+v_hdim: 1024
+z_dim: 64
+bs: 64
+lr: 1.e-4
+epochs: 100
+shuffle: True
+augment: False
+
+save_model_interval: 10
+imsize: 224
+loss: 'VAELoss'

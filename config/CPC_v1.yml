@@ -1,0 +1,32 @@
+seed: 1
+network: 'CPC_v1_resnet18'
+pre_train: True # only for online network
+#projection dims of CPC
+v_hdim: 512
+z_dim: 64
+
+#CPC settings
+grid_size: 7
+pred_steps: 3
+pred_directions: 4
+norm: 'layer'
+
+bs: 64
+optimizer: 'Adam'
+lr: 1.e-4
+momentum: 0.9
+weight_decay: 0.0004
+
+epochs: 100
+shuffle: True
+augment: True
+
+save_model_interval: 3
+imsize: 224
+loss: 'RegressionLoss'
+
+
+# if you wanna train from scratch, please set off this key: init_train
+checkpoint: 'results/CPC_v1/sequence/models/ckpt_train_67.pkl'
+init_train: True
+eval_metrics: 'mse' #'cos'
