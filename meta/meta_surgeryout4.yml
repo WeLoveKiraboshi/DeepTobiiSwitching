@@ -1,0 +1,4 @@
+camera_num: 5
+train: [surgery_01, surgery_02, surgery_03]
+val: [surgery_01, surgery_02, surgery_03]
+test: [surgery_04]
