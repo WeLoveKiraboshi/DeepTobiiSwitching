@@ -19,13 +19,13 @@ Now creating...
 
 If you use our scripts in an academic work, please cite:
 
-    @article{In-PlaneRotationAwareMonoDepth2020,
-      title={In-Plane Rotation-Aware Monocular Depth Estimation Using SLAM},
-      author={Yuki Saito, Ryo Hachiuna, and Hideo Saito},
-      journal={International Conference on Frontiers of Computer Vision},
-      pages={305--317},
-      publisher={Springer Singapore},
-      year={2020}
+    @article{DeepTobiiSwitching2021,
+      title={Camera Selection for Occlusion-less Surgery Recording via Training with an Egocentric Camera},
+      author={Yuki Saito, Ryo Hachiuna, Hideo Saito, Hiroki Kajita, Yoshifumi Takatsume, and Tetsu Hayashida},
+      journal={},
+      pages={},
+      publisher={},
+      year={}
      }
 
 
