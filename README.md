@@ -11,9 +11,9 @@ alt="ORB-SLAM2" width="584" height="413" border="300" /></a>
 
 ### Related Publications:
 
-Now creating...
 
-[comment]: <> (Yuki Saito, Ryo Hachiuma, and Hideo Saito. **In-Plane Rotation-Aware Monocular Depth Estimation using SLAM**. *International Workshop on Frontiers of Computer Vision&#40;IW-FCV 2020&#41;,* pp. 305-317, 2020. **[PDF]&#40;https://link.springer.com/chapter/10.1007%2F978-981-15-4818-5_23&#41;**.)
+
+Yuki Saito, Ryo Hachiuna, Hideo Saito, Hiroki Kajita, Yoshifumi Takatsume, and Tetsu Hayashida **Camera Selection for Occlusion-less Surgery Recording via Training with an Egocentric Camera**. *IEEE Access 10.1109/ACCESS.2021.3118426* pp. 1-1, 2021. **[PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9562527)**.
 
 # 1. License
 
@@ -22,10 +22,11 @@ If you use our scripts in an academic work, please cite:
     @article{DeepTobiiSwitching2021,
       title={Camera Selection for Occlusion-less Surgery Recording via Training with an Egocentric Camera},
       author={Yuki Saito, Ryo Hachiuna, Hideo Saito, Hiroki Kajita, Yoshifumi Takatsume, and Tetsu Hayashida},
-      journal={},
-      pages={},
-      publisher={},
-      year={}
+      journal={IEEE Access},
+      pages={1-1},
+      doi={10.1109/ACCESS.2021.3118426}
+      publisher={IEEE},
+      year={2021}
      }
 
 
